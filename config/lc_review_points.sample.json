@@ -1,0 +1,134 @@
+[
+  {
+    "source_id": "SAMPLE-LC-001",
+    "title": "Sample prior review: missing insurance certificate",
+    "summary": "A fictitious presentation was returned because the insurance certificate required by the credit was missing.",
+    "snippet": "Check that every required insurance certificate is present before presentation.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-002",
+    "title": "Sample prior review: invoice amount tolerance",
+    "summary": "A fictitious commercial invoice amount exceeded the documentary credit amount beyond the permitted tolerance.",
+    "snippet": "Compare invoice amount and currency with the credit and its stated tolerance.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-003",
+    "title": "Sample prior review: late presentation",
+    "summary": "A fictitious document set was presented after the period calculated from the transport document date.",
+    "snippet": "Check the presentation period and credit expiry against the shipment date.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-004",
+    "title": "Sample prior review: bill of lading signature",
+    "summary": "A fictitious bill of lading did not clearly identify the carrier or the capacity of the signer.",
+    "snippet": "Confirm the transport document signature and stated signing capacity.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-005",
+    "title": "Sample prior review: inconsistent goods description",
+    "summary": "A fictitious invoice used a goods description that conflicted with the description stated in the credit.",
+    "snippet": "Compare the commercial invoice goods description with the documentary credit.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-006",
+    "title": "Sample prior review: certificate of origin",
+    "summary": "A fictitious certificate of origin named a country inconsistent with the commercial invoice.",
+    "snippet": "Cross-check origin statements across the certificate and invoice.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-007",
+    "title": "Sample prior review: packing list quantity",
+    "summary": "A fictitious packing list quantity did not agree with the invoice quantity and package count.",
+    "snippet": "Reconcile quantity, weight, and package count between presented documents.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-008",
+    "title": "Sample prior review: transport date consistency",
+    "summary": "A fictitious transport document showed an on-board date outside the shipment window in the credit.",
+    "snippet": "Compare the on-board notation with the latest shipment date.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-009",
+    "title": "Sample prior review: partial shipment restriction",
+    "summary": "A fictitious presentation indicated a partial shipment although the credit prohibited partial shipment.",
+    "snippet": "Review quantities and transport documents for evidence of partial shipment.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-010",
+    "title": "Sample prior review: transshipment condition",
+    "summary": "A fictitious route showed transshipment that required additional checking against the credit terms.",
+    "snippet": "Compare route and transport clauses with any transshipment restriction.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-011",
+    "title": "Sample prior review: document date sequence",
+    "summary": "A fictitious inspection certificate date preceded the stated inspection activity in an inconsistent sequence.",
+    "snippet": "Check that document dates form a plausible and credit-compliant sequence.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  },
+  {
+    "source_id": "SAMPLE-LC-012",
+    "title": "Sample prior review: inconsistent applicant name",
+    "summary": "A fictitious document abbreviated the applicant name in a way that created an apparent conflict across documents.",
+    "snippet": "Review party names for conflicts while applying ISBP consistency principles.",
+    "metadata": {
+      "record_type": "review_point",
+      "kb_type": "sample",
+      "kb_promoted": true
+    }
+  }
+]

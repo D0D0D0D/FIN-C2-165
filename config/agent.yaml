@@ -1,0 +1,37 @@
+# Agent Manifest — AgentRegistry entry point
+# AgentRegistry reads every key below at ROOT level — do NOT nest keys under an
+# `agent:` block. That nested shape is invisible to the registry: `make_agent_key()`
+# falls back to `default/unknown@latest`, so every agent collides on one key.
+# Registry contract: every key stays at root level and `class` is a single
+# dotted import path (the loader does `manifest["class"].rsplit(".", 1)`).
+id: "FIN-C2-165"
+name: "Trade Finance LC Document Preflight Agent"
+namespace: "fin"
+version: "1.0.0"
+enabled: true
+category: "Cat 2"
+# Static generation contract. Omitted by legacy templates defaults to deterministic.
+# This AG drives its LLM stage through the config["llm"] injection seam (BaseLLM), so the
+# truthful declaration is llm — omitting it would record an LLM template as deterministic.
+generation_mode: "llm"  # deterministic | llm
+industry: "FIN"
+
+# L1 base class (outer graph). Conceptual pattern: DocGenerationAgent (accumulation Cat2).
+base_type: "AgentBaseGraph"
+
+# Entry point — single dotted import path (module.Class), NOT split module:/class:.
+# AgentRegistry does `manifest["class"].rsplit(".", 1)` to get (module, class_name).
+class: "src.graph.graph.TradeFinanceLCPreflightAgent"
+
+# Security
+required_trust_level: "VERIFIED_EXTERNAL"
+
+# Compile-time gates — declare every secret/extra actually used, or the agent loads
+# with those checks silently disabled.
+requires:
+  secrets: []
+  extras: []
+
+# Runtime parameters (max_retry, timeout_s, hitl, memory_enabled, ...) live in
+# config/config.yaml — AgentRegistry loads that file separately and passes it as
+# Graph(config=...). Do NOT put them here.

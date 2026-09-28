@@ -1,0 +1,13 @@
+# Runtime parameters — loaded separately from the manifest and passed as Graph(config=...).
+# Hoisted out of the legacy `agent.config:` block in config/agent.yaml (2026-08-13),
+# where AgentRegistry could never see them.
+max_retry: 3
+timeout_s: 60          # multilingual document collation + LLM apply
+memory_enabled: false  # HITL unused — review recorded via /feedback into DB
+hitl:
+  enabled: false
+llm:
+  temperature: 0.1     # fact-consistency priority (UCP600/ISBP application)
+  max_tokens: 2500
+retrieval:
+  top_k: 5
